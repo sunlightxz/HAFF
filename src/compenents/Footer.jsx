@@ -3,8 +3,9 @@ import { FaCat } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>
-      <div className="w-full h-[400px] bg-[#2A2824]   mt-20 relative flex flex-col justify-center items-center">
+    <div className="">
+      
+      <div className="w-full h-[400px] bg-[#2A2824] overflow-hidden  mt-20 relative flex flex-col justify-center items-center">
         <div className=" flex flex-col justify-center items-center">
           <h1 className="text-[60px] text-[#FFD59A] font-bold leading-[56px] capitalize font-grifter">
            Subscribe to us
@@ -24,6 +25,7 @@ const Footer = () => {
           <span></span>
         </div>
       </div>
+      
      <div className="flex justify-center items-center gap-1 text-xl">
      meow <FaCat />
      </div>
