@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+
+
+.nav-sm-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color:black;  
+  transition: .5s ease;
+  flex-direction: column;
+  z-index: 15;
+}
+.nav-sm-close{
+    font-size: 27px;
+    color: goldenrod;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right:20px;
+}
+.nav-sm-close:hover {
+    transform: rotate(36deg);
+}
+@media screen and (max-width:2000px){
+.nav-img img {
+    width: 100px;
+}
+
+}
+@media screen and (max-width:650px){
+    .nav {
+        padding: 1rem;
+    }
+    .login{
+        display: none;
+    }
+    .nav-img img {
+        width: 110px;
+    }
+    }
+@media screen and (max-width:1150px){
+    .app-nav-links {
+        display: none;
+    }
+    .app-nav-sm-links{
+        display: flex;
+    }
+}
+
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animation {
+  animation: marquee 20s linear infinite; /* Adjust animation duration as needed */
+}
+
+.shadow {
+  box-shadow: 13px 14px 12px 1px rgba(242,220,197,0.74);
+-webkit-box-shadow: 13px 14px 12px 1px rgba(242,220,197,0.74);
+-moz-box-shadow: 13px 14px 12px 1px rgba(242,220,197,0.74);
+}
+
+.mid {
+  position: absolute;
+  bottom: 20px;
+  left: 200px;
+  width: 80%;
+}
+
+.glowingButton {
+  position : relative;
+  box-shadow:  0 0 10px white;
+  box-shadow:  0 0 20px rgb(186, 175, 175);
+
+}
+
+.glowingButton:hover {  
+  box-shadow:  0 0 10px white;
+  box-shadow:  0 0 20px rgb(186, 175, 175);
+
+}
